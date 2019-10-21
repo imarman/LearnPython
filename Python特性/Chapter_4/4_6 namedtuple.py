@@ -19,9 +19,7 @@ my_car = Car('red', 3812.4)
 
 # namedtuple 是不可变得， 试图覆盖某个字段时会得到一个 AttributeError 异常
 my_car.color = 'blue'
-
-print(my_car.color)
-print(my_car.mileage)
+# >>> AttributeError: can't set attribute
 
 
 # 子类化namedtuple
@@ -44,3 +42,4 @@ Car = namedtuple('Car', ['color', 'mileage', ])
 ElectricCar = namedtuple('ElectricCar', Car._fields + ('charge',))
 
 print(ElectricCar('red', 1234, 45.0))
+# >>> ElectricCar(color='red', mileage=1234, charge=45.0)
