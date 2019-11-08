@@ -1,3 +1,4 @@
+
 '''
 collections.namedtuple -- 方便的数据对象
 可以当作类使用
