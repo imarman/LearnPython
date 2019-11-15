@@ -2,18 +2,21 @@ def integers():
     for i in range(1, 9):
         yield i
 
+
 def squared(seq):
     for i in seq:
         yield i * i
+
 
 def negated(seq):
     for i in seq:
         yield -i
 
+
 chain = negated(squared(integers()))
 print(list(chain))
 '''
-    Python 中的迭代器可以链接多个迭代器，从而编写高效的数据处理“管道“
+    Python 中的迭代器可以链接多个迭代器，从而编写高效的数据处理 管道 
     利用 python 的生成器函数和生成器表达式能够很快的构建简洁而强大的迭代器链
     生成器和生成器表达式时 python 中编写迭代器的语法糖, 与编写基于类的迭代器相比，这种方式能够省去许多样板代码
     
