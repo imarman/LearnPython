@@ -25,4 +25,5 @@ s.get_nowait()
 s.get()  # 空的
 
 # 阻塞，永远停在这里
-print(s.get())
+s.get()
+
