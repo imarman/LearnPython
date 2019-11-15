@@ -48,7 +48,7 @@ for item in bound_repeater('Hi', 3):
     print(item)
 
 
-# 上述生成器的更优化版本, 用 range() 方法 替换 while 语句，使代码更pythonic
+# 上述生成器的更优化版本, 用 range() 方法 替换 while 语句
 def bounded_repeater(value, max_repeats):
     for i in range(max_repeats):
         yield value
