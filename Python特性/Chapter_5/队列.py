@@ -23,3 +23,4 @@ q.popleft()
 q.popleft()  # >> IndexError: pop from an empty deque
 
 # queue.Queue -- 为并行计算提供的锁语义
+# 跟栈的 queue.LifoQueue 类似
